@@ -29,6 +29,12 @@ class AboutViewController: UITableViewController {
         }
         
         if indexPath.row == 3 {
+            if let url = URL(string: "https://github.com/aritropaul/CovidTravel") {
+                UIApplication.shared.open(url)
+            }
+        }
+        
+        if indexPath.row == 4 {
             if let url = URL(string: "https://covid19travel.com") {
                 UIApplication.shared.open(url)
             }

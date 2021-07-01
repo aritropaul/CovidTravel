@@ -76,8 +76,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WBH-MC-pSC">
-                                                    <rect key="frame" x="59" y="14" width="19" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1.0.1(2)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WBH-MC-pSC">
+                                                    <rect key="frame" x="59" y="14" width="54.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -98,8 +98,38 @@
                                         </tableViewCellContentView>
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oVR-9B-2wf" detailTextLabel="sHu-qC-vdw" imageView="hbe-BH-N9f" rowHeight="68" style="IBUITableViewCellStyleSubtitle" id="gLI-xW-f3o">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="y1h-tO-qCZ" detailTextLabel="aoa-IB-NIa" imageView="ReY-vV-QYO" rowHeight="68" style="IBUITableViewCellStyleSubtitle" id="1VW-D2-clD">
                                         <rect key="frame" x="20" y="276" width="374" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1VW-D2-clD" id="lnm-aE-hA0">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="aritropaul/CovidTravel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y1h-tO-qCZ">
+                                                    <rect key="frame" x="59" y="14" width="166" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aoa-IB-NIa">
+                                                    <rect key="frame" x="59" y="37.5" width="40" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="point.fill.topleft.down.curvedto.point.fill.bottomright.up" catalog="system" id="ReY-vV-QYO">
+                                                    <rect key="frame" x="22.5" y="24" width="19" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oVR-9B-2wf" detailTextLabel="sHu-qC-vdw" imageView="hbe-BH-N9f" rowHeight="68" style="IBUITableViewCellStyleSubtitle" id="gLI-xW-f3o">
+                                        <rect key="frame" x="20" y="344" width="374" height="68"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gLI-xW-f3o" id="jnh-aG-Tzv">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
@@ -721,11 +751,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="India" id="H2W-kq-eao">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ellipsis.circle.fill" catalog="system" id="D4J-ay-ojz">
-                            <connections>
-                                <segue destination="imb-tJ-Nc8" kind="show" id="7Vx-2X-m6r"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="ellipsis.circle.fill" catalog="system" id="D4J-ay-ojz">
+                                <connections>
+                                    <segue destination="imb-tJ-Nc8" kind="show" id="7Vx-2X-m6r"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="bell" catalog="system" id="NyD-u4-Daw"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="covidTestLabel" destination="uIc-Lx-f2E" id="oly-YA-qzm"/>
@@ -845,6 +878,7 @@
     <resources>
         <image name="airplane" catalog="system" width="128" height="115"/>
         <image name="arrow.up.right" catalog="system" width="128" height="111"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="building.2.fill" catalog="system" width="128" height="106"/>
         <image name="building.columns.fill" catalog="system" width="128" height="113"/>
         <image name="bus.fill" catalog="system" width="128" height="122"/>
@@ -860,6 +894,7 @@
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="point.fill.topleft.down.curvedto.point.fill.bottomright.up" catalog="system" width="121" height="128"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -875,6 +910,9 @@
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
